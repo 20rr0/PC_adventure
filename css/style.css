@@ -27,9 +27,15 @@ h1 {
 
 }
 
+#backdrop {
+    position: absolute;
+    background: url("img/background.jpg") no-repeat;
+}
+
 #character {
     position: absolute;
     top: 40px;
     left: 50px;
     transition: all .35s ease-in-out;
+    z-index: 100;
 }
