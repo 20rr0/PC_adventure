@@ -29,7 +29,10 @@ h1 {
 
 #backdrop {
     position: absolute;
-    background: url("img/background.jpg") no-repeat;
+    background: url("../img/background.jpg") no-repeat;
+    width: 800px;
+    height: 600px;
+    z-index: 0;
 }
 
 #character {
