@@ -13,6 +13,6 @@ document.getElementById('gameScreen').onclick = function (e) {
 document.getElementById("door").addEventListener("click", showMessage);
 
 function showMessage() {
-    console.log(target);
+
     document.getElementById("charcterMessage").style.display = "block";
 }
