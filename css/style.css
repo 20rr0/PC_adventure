@@ -5,6 +5,7 @@ body {
     gap: 20px;
     margin: 0px;
     font-family: 'Oxygen', sans-serif;
+
 }
 
 h1 {
@@ -23,11 +24,12 @@ h1 {
     grid-row-end: 3;
     background-color: #c6c9f0;
     position: relative;
+
 }
 
 #character {
     position: absolute;
     top: 40px;
     left: 50px;
-    transition: all;
+    transition: all .35s ease-in-out;
 }
