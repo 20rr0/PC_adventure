@@ -1,0 +1,33 @@
+body {
+    display: grid;
+    grid-template-columns: auto 800px auto;
+    grid-template-rows: auto 600px auto;
+    gap: 20px;
+    margin: 0px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+}
+
+#title {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    text-align: center;
+}
+
+#gameScreen {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #c6c9f0;
+    position: relative;
+}
+
+#character {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    transition: all;
+}
