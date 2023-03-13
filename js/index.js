@@ -17,7 +17,7 @@ document.getElementById('gameScreen').onclick = function (e) {
             break;
         case "windowRT":
             showMessage("Is there someone inside?");
-            window.location.href = localPlace + "pages/insideHouse.html";
+            window.location.href = "pages/insideHouse.html";
 
             break;
         default:
