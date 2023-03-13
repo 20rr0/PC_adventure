@@ -1,5 +1,5 @@
 //var localPlace = "file:///C:/Spullen/Software%20development/Modules/PC_adventure/";
-
+var localPlace = "PC_adventure/";
 document.getElementById('gameScreen').onclick = function (e) {
     // e = Mouse click event.
     var box = document.getElementById('gameScreen');
