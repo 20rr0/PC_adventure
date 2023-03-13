@@ -1,4 +1,4 @@
-//var localPlace
+//var localPlace = "file:///C:/Spullen/Software%20development/Modules/PC_adventure/";
 
 document.getElementById('gameScreen').onclick = function (e) {
     // e = Mouse click event.
@@ -17,7 +17,7 @@ document.getElementById('gameScreen').onclick = function (e) {
             break;
         case "windowRT":
             showMessage("Is there someone inside?");
-            window.location.href = "/pages/onsideHouse.html";
+            window.location.href = localPlace + "pages/insideHouse.html";
 
             break;
         default:
