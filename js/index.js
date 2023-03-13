@@ -7,12 +7,29 @@ document.getElementById('gameScreen').onclick = function (e) {
     //console.log("Left? : " + x + " ; Top? : " + y + ".");
     document.getElementById("character").style.left = x + "px";
     document.getElementById("character").style.top = y + "px";
+    console.log(e.clientX);
+
+    switch (e.target.id) {
+        case "door":
+            showMessage("not sure what to do here?");
+            break;
+        case "windowRT":
+            showMessage("Is there someone inside?");
+            break;
+        default:
+            hideMessage();
+            break;
+
+    }
 
 }
 
-document.getElementById("door").addEventListener("click", showMessage);
-
-function showMessage() {
+function showMessage(message) {
     document.getElementById("characterAudio").play();
     document.getElementById("charcterMessage").style.display = "block";
+    document.getElementById("charcterMessage").innerText = message;
+}
+
+function hideMessage() {
+    document.getElementById("charcterMessage").style.display = "none";
 }
