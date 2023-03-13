@@ -1,3 +1,5 @@
+//var localPlace
+
 document.getElementById('gameScreen').onclick = function (e) {
     // e = Mouse click event.
     var box = document.getElementById('gameScreen');
@@ -15,6 +17,8 @@ document.getElementById('gameScreen').onclick = function (e) {
             break;
         case "windowRT":
             showMessage("Is there someone inside?");
+            window.location.href = "/pages/onsideHouse.html";
+
             break;
         default:
             hideMessage();
@@ -26,10 +30,12 @@ document.getElementById('gameScreen').onclick = function (e) {
 
 function showMessage(message) {
     document.getElementById("characterAudio").play();
-    document.getElementById("charcterMessage").style.display = "block";
+    document.getElementById("charcterMessage").style.opacity = "1";
     document.getElementById("charcterMessage").innerText = message;
 }
 
 function hideMessage() {
-    document.getElementById("charcterMessage").style.display = "none";
+    document.getElementById("characterAudio").pause();
+    document.getElementById("charcterMessage").style.opacity = "0";
+    document.getElementById("charcterMessage").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;...";
 }
